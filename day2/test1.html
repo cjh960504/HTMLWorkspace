@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+	#box1{
+		background-color:red;
+		width:700px;
+		height:100px
+	}
+	#box2{
+		background-color:yellow;
+		width:200px;
+		height:400px;
+		float:left;
+	}
+    #box3{
+		background-color:green;
+		width:500px;
+		height:400px;
+		float:left;
+	}
+    #box4{
+		background-color:blue;
+		width:700px;
+		height:100px
+	}
+	
+    #wrapper2{
+		height:400px;
+		overflow:hidden;
+	}
+	
+    #wrapper{
+		margin:auto; 
+		width:700px;
+		height:600px;
+	}
+</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="box1">1</div>
+			<div id="wrapper2">
+				<div id="box2">2</div>
+				<div id="box3">3</div>
+			</div>
+		<div id="box4">4</div>
+	</div>
+</body>
+</html>
