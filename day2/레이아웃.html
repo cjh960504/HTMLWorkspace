@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>layout</title>
+<style>
+	#box1{
+		background-color:red;
+	
+	}
+	#box2{
+		background-color:yellow;
+		height:300px;
+		/*overflow:hidden; 넘쳐난 데이터들을 감춰버림*/
+		overflow:scroll; 
+	}
+	#box3{
+		background-color:blue;
+	
+	}
+	/*모든 .div마다 너비 속성 등을 반복해서 작업하면 효율성이 떨어지므로, 가장 바깥 쪽에 모든 div를 가둬 둘 또 하나의
+	상자를 두면 편하다.*/
+	#wrapper{
+		width:600px;	
+		border:2px solid black;
+		margin:auto; /*화면 양측의 남는 공간을 양분하여, 화면 가운데로 오게함*/
+	}
+</style>
+</head>
+<body>
+<!--
+	고전적인 작업에서는 웹 페이지의 레이아웃을 테이블로 해왔다.
+	하지만, 테이블을 그 목적 자체가 데이터를 보여주기위한 용도이기 때문에,
+	오늘날과 같은 웹표준을 중시하는 시기에는 사용하면 안된다,,,,,,,,,,,,,
+	해결책) Tag중 화면을 원하는 영역으로 나누어주는 div태그를 이용하면 된다.
+-->
+<!--
+	div를 포함하여, 모든~태그는 box로 간주된다.
+	따라서 모두 네모로 생김, 이런 특징을 가리켜 box model이라 한다.
+-->
+	<div id="wrapper">
+		<div id="box1">빨간색 영역(영역 1)</div>
+		<div id="box2">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him. Adjusting quiver and bow, Zompyc[1] killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove six dozen plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. Big July earthquakes confound zany experimental vow. Foxy parsons quiz and cajole the lovably dim wiki-girl. Have a pick: twenty six letters - no forcing a jumbled quiz! Crazy Fredericka bought many very exquisite opal jewels. Sixty zippers were quickly picked from the woven jute bag. A quick movement of the enemy will jeopardize six gunboats. All questions asked by five watch experts amazed the judge. Jack quietly moved up front and seized the big ball of wax.The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV</div>
+		<div id="box3">파란색 영역(영역 3)</div>
+    </div>
+</body>
+</html>
