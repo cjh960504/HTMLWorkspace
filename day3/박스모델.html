@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+	#box1{
+		width:60px;
+		height:40px;
+		background:red;
+		/*아래쪽 물체와의 마진을 둬보자*/
+		margin-bottom:100px;
+		margin-left:100px;
+		/*이 박스가 보유한 내용물을, 박스 벽과 간격을 둬보자 
+			padding에 의해서 늘어난 만큼 width, height를 줄여야 된다. */
+		padding-left:40px;
+		padding-top:40px;
+	}
+	#box2{
+		width:100px;
+		height:100px;
+		background:blue;
+	}
+</style>
+</head>
+<body>
+
+<pre>
+	<h3>	HTML의 모든 Tag는 Box로 간주되는데, 
+	이때 Box와 Box간의 간격을 margin이라 하고,
+	하나의 박스 안에 있는 내용물과 박스와의 간격을 padding이라 한다.</h3>
+</pre>
+
+	<div id="box1">내용물</div>
+	<div id="box2">내용물</div>
+
+</body>
+</html>
+

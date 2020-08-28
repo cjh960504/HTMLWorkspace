@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>메뉴</title>
+<style>
+	a{
+		text-decoration:none; /*링크의 밑줄 제거*/
+		display:block;/*inline일 경우 한 줄에 나오게 되므로, 태그의 속성을 block형으로 강제변경*/
+		background:#eeeeee;
+	}
+	div{
+		width:200px;
+	}
+	/*공통적으로 사용할 스타일 경우엔 class라는 단위로 정의하여 재사용할 수 있다.*/
+	.titleStyle{
+		background:#77ce7b;
+	}
+</style>
+</head>
+<body>
+	<!--링크 태그의 옵션에는 대상 프레임에 대한 target이 지원된다. 
+		_self : default (아무것도 지정 X시)
+		_parent : 새창으로 띄움
+		개발자 원하는 프레임의 이름을 지정할 수 있음
+		-->
+	<!--모든 메뉴를 담고 있을 용도의 box-->
+	메뉴
+	<div>
+		<a href="#" class="titleStyle">1일차</a>
+		<a href="#">예제2</a>
+		<a href="#">예제3</a>
+		<a href="#">예제4</a>
+	</div>
+	<div>
+		<a href="#" class="titleStyle">2일차</a>
+		<a href="#">예제2</a>
+		<a href="#">예제3</a>
+		<a href="#">예제4</a>
+	</div>
+	<div>
+		<a href="#" class="titleStyle">3일차</a>
+		<a href="#">예제2</a>
+		<a href="#">예제3</a>
+		<a href="#">예제4</a>
+	</div>
+	<div>
+		<a href="#" class="titleStyle">4일차</a>
+		<a href="#">예제2</a>
+		<a href="#">예제3</a>
+		<a href="#">예제4</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+복습
+-----------------------------------------------------------------
+1. table을 저장하기 위해서는 먼저 데이터베이스 파일을 존재시켜야한다.
+	create tablespace 테이블스페이스명
+	datafile '저장위치/파일명.dbf' size 용량;
+
+	mariadb-create database 이름
+2. 위에서 만든 데이터베이스를 사용할 유저 생성
+	create user 유저명
+	identified by 비밀번호
+	default tablespace 사용할 테이블스페이스명 
+	quota 부여할 사이즈 테이블스페이스명
+mariadb-create user '유저명'@'서버' identified by '비밀번호'
+3. 권한 부여하기 (DCL)
+	grant create session, create table to 유저명;
+mariadb-grant all privileges(모든 권한을) on app.*(app데이터베이스에 모든 권한의) to 'dev'@'localhost'(dev라는 사용자에게);
+	flush privileges(권한 새로고침)
+
+MariaDB
+----------------------------------------------------------------------------------------------
+1. 접속
+ - mysql.exe파일이 존재하는 디렉터리로 이동
+ - mysql -h localhost -u root -p 명령 후 비번 입력
+
+2. 데이터베이스(oracle의 tablespace와 비슷한) 생성
+- create database 데이터베이스명
+
+3. 유저생성
+- create user '유저명'@'들어갈 서버' identified by '비밀번호'; 
+
+4. 권한부여
+- grant all privileges on 대상데이터베이스명.* to '대상유저명'@'localhost'
+  flush privileges; (privilege refresh)

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+	.menu{
+		/*메뉴들을 묶어놓을 박스에 대한 클래스*/
+		width:190px;
+		background:yellow;
+	}
+	.menu a{/*선택자는 조합하여 사용할 수 있으며, 선택자 뒤에 한칸을 띄우면 하위 요소를 가리키는 것
+	모든 a태그를 가르키지 않고 menu클래스 내의 a태그에 대해서만 적용*/
+		display:block;	/*인라인 속성을 블럭으로 전환 : 너비와 높이가 가능. 즉, 크기를 가질 수 있다.*/ 
+		text-decoration:none;
+		background-color:#eeeeee;
+		color:#000000;
+		/*a태그를 이루는 Box와 그 안에 있는 글씨가 즉 내용물이 너무 붙었다. 간격을 주자*/
+		padding:10px;
+	}
+	/*유사클래스를 이용하여 링크태그에 마우스 올려놓으면 배경색 바꾸기
+	hover = 마우스 올려놓을 시 */
+	.menu a:hover{
+		background-color:#cccccc;
+	}
+	/*a태그에 적용된 클래스*/
+	.menu a.active{
+		background-color:#4caf50;
+		color:#FFFFFF;
+	}
+</style>
+</head>
+<body>
+	<div class="menu">
+		<a href="#" class="active">1일차</a>
+		<a href="./day1/dummy.html" target="myFrame">HTML기초</a>
+		<a href="./day1/테이블기초.html" target="myFrame">테이블기초</a>
+		<a href="./day1/셀 합치기.html" target="myFrame">셀합치기</a>
+		<a href="./day1/로그인폼.html" target="myFrame">로그인폼</a>
+		<a href="./day1/회원가입폼.html" target="myFrame">회원가입폼</a>
+		<a href="./day1/게시판.html" target="myFrame">게시판</a>
+	</div>
+	<div class="menu">
+		<a href="#" class="active">2일차</a>
+		<a href="./day2/css색상.html" target="myFrame">색상</a>
+		<a href="./day2/위치 속성.html" target="myFrame">위치와 속성</a>		
+		<a href="./day2/배경처리.html" target="myFrame">배경처리</a>
+		<a href="./day2/Border학습.html" target="myFrame">Border</a>
+		<a href="./day2/block의 이해.html" target="myFrame">Block</a>
+		<a href="./day2/레이아웃.html" target="myFrame">레이아웃</a>
+		<a href="./day2/과제 문제 풀이.html" target="myFrame">레이아웃 과제1</a>
+		<a href="./day2/레이아웃 과제2.html" target="myFrame">레이아웃 과제2</a>
+		<a href="./day2/레이아웃 과제3.html" target="myFrame">레이아웃 과제3</a>
+		<a href="./day2/레이아웃 과제4.html" target="myFrame">레이아웃 과제4</a>
+	</div>
+	<div class="menu">
+		<a href="#" class="active">3일차</a>
+		<a href="./day3/레이아웃.html" target="myFrame">레이아웃 학습(float과 clear)</a>
+		<a href="./day3/인라인블럭.html" target="myFrame">inline-block</a>
+		<a href="./day3/박스모델.html" target="myFrame">Box 모델</a>
+		<a href="./day3/트랜지션.html" target="myFrame">Transition(전이, 변화)</a>
+		<a href="./day3/동영상.html" target="myFrame">동영상제어</a>
+		<a href="./day3/애니메이션.html" target="myFrame">애니메이션</a>
+		<a href="./day3/변형.html" target="myFrame">Transform(변형)</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+/*박스들은 좌우, 공은 위아래, 그림자는 작아졌다 커졌다*/
+	#ballBox{
+		width:0px;
+		height:0px;
+		animation-name:aniBallBox;
+		animation-duration:0.9s;	
+		animation-iteration-count:infinite;/*실행 횟수*/
+		animation-direction:alternate;/*반복 방식*/
+	}
+	@keyframes aniBallBox{
+		from{
+			left:0px;
+
+		}
+		to{
+			left:400px;
+		}
+	}
+	#shadowBox{
+		top:600px;
+		animation-name:aniShadowBox;
+		animation-duration:0.9s;	
+		animation-iteration-count:infinite;/*실행 횟수*/
+		animation-direction:alternate;/*반복 방식*/
+	}
+	@keyframes aniShadowBox{
+		from{
+			left:0px;
+
+		}
+		to{
+			top:400px;
+		}
+	}
+	#ball{
+		position:absolute;
+		left:0px;
+		animation-name:aniBall;
+		animation-duration:0.9s;	
+		animation-iteration-count:infinite;/*실행 횟수*/
+		animation-direction:alternate;/*반복 방식*/
+		display:block;
+	}
+	@keyframes aniBall{
+		from{
+			top:0px;
+
+		}
+		to{
+			top:400px;
+		}
+	}
+	#shadow{
+		width:0px;
+		height:0px;
+		position:absolute;
+		left:508px;
+		top:600px;
+		animation-name:aniShadow;
+		animation-duration:0.9s;	
+		animation-iteration-count:infinite;/*실행 횟수*/
+		animation-direction:alternate;/*반복 방식*/
+		border-radius:50%;
+	}
+	@keyframes aniShadow{
+		from{
+			background:white;
+			width:0px;
+			height:0px;
+			left:508px;
+			top:540px;
+		}
+		to{
+			background:#2a2a2a;
+			width:200px;
+			height:200px;
+			left:400px;
+			top:430px;
+		}
+
+	}
+</style>
+</head>
+<body>
+	<div id="ballBox">
+		<img id="ball" src="../images/soccerball.png"/>
+	</div>
+	<div id="shadowBox">
+			<div id="shadow"></div>		
+	</div>
+</body>
+</html>
