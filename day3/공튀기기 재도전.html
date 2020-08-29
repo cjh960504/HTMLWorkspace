@@ -8,14 +8,46 @@
 		height:200px;
 		position:absolute;
 		left:600px;
-		top:300px;
-		animation-name:aniBallBox;
+		animation-name:aniBox;
 		animation-duration:8s;	
 		animation-iteration-count:infinite;/*실행 횟수*/
 		animation-direction:alternate;/*반복 방식*/
 		
 	}
-	@keyframes aniBallBox{
+	img{
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:300px;
+		animation-name:aniBall;
+		animation-duration:0.7s;	
+		animation-iteration-count:infinite;/*실행 횟수*/
+		animation-direction:alternate;/*반복 방식*/
+	}
+	#shadowBox{
+		width:200px;
+		height:10px;
+		position:absolute;
+		left:600px;
+		top:500px;
+		animation-name:aniBox;
+		animation-duration:8s;	
+		animation-iteration-count:infinite;/*실행 횟수*/
+		animation-direction:alternate;/*반복 방식*/
+
+	}
+	#shadow{
+		width:200px;
+		height:100%;
+
+		background:black;
+		position:absolute;
+		animation-name:anishadow;
+		animation-duration:0.7s;	
+		animation-iteration-count:infinite;/*실행 횟수*/
+		animation-direction:alternate;/*반복 방식*/
+	}
+	@keyframes aniBox{
 		from{
 			left:600px;
 
@@ -23,17 +55,6 @@
 		to{
 			left:0px;
 		}
-	}
-	img{
-		width:100%;
-		height:100%;
-		position:absolute;
-		left:600px;
-		top:300px;
-		animation-name:aniBall;
-		animation-duration:0.7s;	
-		animation-iteration-count:infinite;/*실행 횟수*/
-		animation-direction:alternate;/*반복 방식*/
 	}
 	@keyframes aniBall{
 		from{
@@ -44,11 +65,15 @@
 			top:0px;
 		}
 	}
-	#shadowBox{
-		width:10px;
-		height:10px;
-		position:absolute;
-
+	@keyframes anishadow{
+		from{
+			width:200px;
+			height:100%;
+		}
+		to{ 
+			width:20px;
+			height:50%;
+		}
 	}
 </style>
 </head>
@@ -57,9 +82,7 @@
 		<img src="../images/soccerball.png"></img>
 	</div>
 	<div id="shadowBox">
-		<div id="shadow">
-		
-		</div>
+		<div id="shadow"></div>
 	</div>
 </body>
 </html>
