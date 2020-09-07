@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표 표현하기</title>
+    <style>
+        /* 4개의 스팬에 공통으로 적용할 스타일 정의 
+            모든 태그는 box형태이고, block(:같은 행에, 그 어떤 태그와 공존불가, 하지만 너비, 높이 지정이 가능)
+            inline(:block과 반대) 속성으로 구분됨
+        */
+        .arrow{
+            border: solid midnightblue;
+            border-width: 0px 3px 3px 0px;  /*top right bottom left*/
+            display: inline-block; /* 인라인이면서, 너비/높이 지정이 가능한 속성*/
+            padding: 3px;/* 내용물과 내용물의 벽과의 거리*/
+            margin-left: 20px;
+        }
+        /* 우측화살표 */
+        .right{
+            transform: rotate(-45deg); /* 좌측방향으로 45도 돌린다 */
+        }
+             /* 아래측화살표 */
+        .down{
+            transform: rotate(45deg);
+        }
+             /* 좌측화살표 */
+        .left{
+            transform:rotate(135deg);
+        }
+             /* 위측화살표 */
+        .up{
+             transform:rotate(-135deg);   
+        }
+    </style>
+</head>
+<body>
+<!-- 컨트롤 + / -->
+<!-- 특수문자 화살표가 아닌 순수 css만은로 화살표 만들기 -->
+<!-- span태그는 아무런 효과가 없다.. 하지만 쓰는 이유는? -->
+<!-- 문서 컨텐츠의 일부에 마크업 하고 싶을 때 사용한다. -->
+<!-- shift + art + 방향키 : 한줄 복사 -->
+<!-- 클래스 두개이상 적용시 띄우고 쓰면 댐 -->
+    <span class="arrow right"></span>
+    <span class="arrow down"></span>
+    <span class="arrow left"></span>
+    <span class="arrow up"></span>
+</body>
+</html>

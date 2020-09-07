@@ -9,7 +9,7 @@
 	create user 유저명
 	identified by 비밀번호
 	default tablespace 사용할 테이블스페이스명 
-	quota 부여할 사이즈 테이블스페이스명
+	quota 부여할 사이즈 on 테이블스페이스명
 mariadb-create user '유저명'@'서버' identified by '비밀번호'
 3. 권한 부여하기 (DCL)
 	grant create session, create table to 유저명;

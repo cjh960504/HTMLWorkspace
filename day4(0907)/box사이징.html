@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스사이징</title>
+    <style>
+        /* 
+            html 요소의 너비 = 자기 width + border + padding 
+            html 요소의 높이 = 자기 height + border + padding 
+         */
+        #box1{
+            width: 150px;
+            height: 200px;
+            background:red;
+            padding-left:30px; /*전체 크기의 영향을 준다*/
+            border:10px solid black; /*전체 크기의 영향을 준다*/
+        }
+        #box2{
+            width: 200px;
+            height: 200px;
+            background:yellow;
+            border:10px solid blue;
+            padding:90px;
+            /* real width = width + border + padding  */
+            box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box1">box1</div>
+    
+    <div id="box2">box2</div>
+
+</body>
+</html>
